@@ -12,7 +12,7 @@ public class UsuarioService {
     private final UsuarioRepository usuarioRepository;
 
     public Usuario saveUsuario (Usuario newUsuario){
-        newUsuario.setNome(newUsuario.getNome());
+        newUsuario.setTitulo(newUsuario.getTitulo());
         return usuarioRepository.save(newUsuario);
     }
 
